@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{319FD753-1CE3-4FD7-99A8-F9AF3340201F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>amazon_proyecto_final</RootNamespace>
+    <AssemblyName>amazon_proyecto_final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="client_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client_menu.Designer.cs">
+      <DependentUpon>client_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_add_one_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_add_one_user.Designer.cs">
+      <DependentUpon>frm_add_one_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_add_seller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_add_seller.Designer.cs">
+      <DependentUpon>frm_add_seller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_add_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_add_user.Designer.cs">
+      <DependentUpon>frm_add_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_edit_seller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_edit_seller.Designer.cs">
+      <DependentUpon>frm_edit_seller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_edit_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_edit_user.Designer.cs">
+      <DependentUpon>frm_edit_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_item_select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_item_select.Designer.cs">
+      <DependentUpon>frm_item_select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listas.Designer.cs">
+      <DependentUpon>frm_listas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_clientes.Designer.cs">
+      <DependentUpon>frm_menu_clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_seller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu_seller.Designer.cs">
+      <DependentUpon>frm_menu_seller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_orders.Designer.cs">
+      <DependentUpon>frm_orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_products.Designer.cs">
+      <DependentUpon>frm_products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestorDeBaseDeDatos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="client_menu.resx">
+      <DependentUpon>client_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_add_one_user.resx">
+      <DependentUpon>frm_add_one_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_add_seller.resx">
+      <DependentUpon>frm_add_seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_add_user.resx">
+      <DependentUpon>frm_add_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_edit_seller.resx">
+      <DependentUpon>frm_edit_seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_edit_user.resx">
+      <DependentUpon>frm_edit_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_item_select.resx">
+      <DependentUpon>frm_item_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listas.resx">
+      <DependentUpon>frm_listas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_clientes.resx">
+      <DependentUpon>frm_menu_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_seller.resx">
+      <DependentUpon>frm_menu_seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_orders.resx">
+      <DependentUpon>frm_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_products.resx">
+      <DependentUpon>frm_products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Amazon.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amazon_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Amazon.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\Shopping-Cart-PNG.png" />
+    <None Include="Resources\platita.png" />
+    <None Include="Resources\224-2245188_a-cardboard-box-with-amazon-written-on-the-side-box.png" />
+    <None Include="Resources\backgr_small.png" />
+    <None Include="Resources\background_search.png" />
+    <None Include="Resources\anadir_producto.png" />
+    <None Include="Resources\anadir_user.png" />
+    <None Include="Resources\seller_anadir.png" />
+    <None Include="Resources\seller_icon_1.png" />
+    <None Include="Resources\buscar_11.png" />
+    <None Include="Resources\buscar_1.png" />
+    <None Include="Resources\user_1.png" />
+    <None Include="Resources\amazon_boxes.png" />
+    <None Include="Resources\anadir_usuario_boton1.png" />
+    <None Include="Resources\anadir_usuario_boton.png" />
+    <None Include="Resources\Amazon_icon - copia.png" />
+    <None Include="Resources\background_1.png" />
+    <None Include="Resources\Fondo_11.png" />
+    <None Include="Resources\Fondo_1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
